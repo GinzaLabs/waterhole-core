@@ -48,7 +48,7 @@
             is loaded into the frame, the modal will be shown, or if the response
             does not contain modal frame content, the modal will be hidden.
         --}}
-        <ui-modal
+        <waterhole-ui-modal
             id="modal-element"
             class="modal"
             hidden
@@ -75,7 +75,7 @@
             <div class="dialog dialog__body dialog--sm" data-modal-target="loading">
                 <x-waterhole::spinner class="spinner--block" />
             </div>
-        </ui-modal>
+        </waterhole-ui-modal>
 
         {{--
             The main alerts element. This element is accessible in JavaScript via

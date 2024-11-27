@@ -1,5 +1,5 @@
 /* Style the modal container */
-ui-modal {
+waterhole-ui-modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -22,34 +22,34 @@ ui-modal {
 }
 
 /* Style the backdrop */
-ui-modal::part(backdrop) {
+waterhole-ui-modal::part(backdrop) {
   background: var(--color-overlay);
 }
 
-ui-modal::part(content) {
+waterhole-ui-modal::part(content) {
   max-width: 100%;
 }
 
 /* Transitions using hello-goodbye */
-ui-modal.enter-active,
-ui-modal.leave-active {
+waterhole-ui-modal.enter-active,
+waterhole-ui-modal.leave-active {
   transition: opacity 0.3s;
 }
 
-ui-modal.enter-from,
-ui-modal.leave-to {
+waterhole-ui-modal.enter-from,
+waterhole-ui-modal.leave-to {
   opacity: 0;
 }
 
-ui-modal.enter-active::part(content),
-ui-modal.leave-active::part(content) {
+waterhole-ui-modal.enter-active::part(content),
+waterhole-ui-modal.leave-active::part(content) {
   transition:
     transform 0.3s cubic-bezier(0.54, 1.12, 0.38, 1.11),
     opacity 0.3s;
 }
 
-ui-modal.enter-from::part(content),
-ui-modal.leave-to::part(content) {
+waterhole-ui-modal.enter-from::part(content),
+waterhole-ui-modal.leave-to::part(content) {
   transform: scale(0.7);
   opacity: 0;
 }
